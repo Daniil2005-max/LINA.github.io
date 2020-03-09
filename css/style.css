@@ -1,0 +1,135 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body{
+	margin: 0;
+	padding: 0;
+}
+.navbar-nav li a{
+	color: grey;
+	font-weight: bold;
+}
+.navbar-brand{
+	margin-right: 540px;
+}
+.banner-page{
+	background-size: cover;
+	width: 70vh;
+	float: right;
+	height: 60vh;
+	position: relative;
+	background-position: center;
+}
+.content{
+	display: inline-block;
+	background-color: #000;
+	margin-left: 150px;
+	color: #fff;
+	margin-top: 100px;
+}
+.title{
+	margin-left: 150px;
+	margin-top: 10px;
+}
+.about{
+	margin-top: 70px;
+}
+
+.about_us{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 25px;
+	color: #7399ff;
+}
+.about_text{
+	color: gray;
+}
+.house{
+	margin-left: 0;
+	margin-right: 50px;
+}
+.team{
+	margin-top: 50px;
+}
+.description{
+	margin-top: 50px;
+}
+.team{
+	display: absolute;
+}
+.skills{
+	margin-right: 30px;
+}
+.footer-copyright a{
+	color: #444;
+}
+.social-icons li{
+	display: inline;
+	margin-right: 50px;
+}
+.icons i:hover{
+	color: #7399ff
+}
+.social-icons{
+	border-top: 1px solid #DCDCDC;
+	border-bottom: 1px solid #DCDCDC;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 20px;
+}
+/*Skills*/
+.container-danil{
+	width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #7899ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  animation: load 2s 0s;
+}
+.bar.learning::before{
+  width: calc(90% - 10px);
+}
+.bar.basic::before{
+  width: calc(95% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(50% - 10px);
+}
+.bar.advanced::before{
+  width: calc(85% - 10px);
+}
+/*Skills*/
+.navbar-nav a:hover{
+	color: #7899ff;
+}
